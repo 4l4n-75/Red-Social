@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+/*** Este es el estilo que tiene por defecto bootstrap ***/
+/* .btn-check:focus+.btn, .btn:focus { 
+    outline: 0;
+    box-shadow: none; 
+}  */
+/****** Interfaz Inicio de PC/Laptop *******/
+body{
+    background: url(img/brickwall.png);
+}
+.fondo{
+    height: calc(100vh - 70px);
+}
+header{
+    background: url(img/navy_blue.png);
+    height: calc( 100vh - 70px);
+    
+}
+main h1{
+    font-size: 90px;
+}
+main h2{
+    font-size: 50px;
+    /* color: rgb(248, 211, 48); */
+}
+main h3{
+    font-size: 40px;
+}
+main .btn{
+    color: rgba(255, 255, 255, 0.548);
+    border-radius: 10px;
+    /* margin-right: 20px; */
+    box-shadow: 0px 4px 35px 1px rgb(78, 78, 78);
+    letter-spacing: 3px;
+}
+footer{
+    background: rgba(0, 0, 0, 0.521);
+    height: 70px;
+}
+.footer{
+    margin: 0 auto;
+}
+footer a{
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: rgb(49, 49, 49);
+}
+/**************Formularios**************/
+form{
+    background: rgba(0, 0, 0, 0.363);
+    box-shadow: 0px 4px 35px 1px rgb(78, 78, 78);
+}
+form img{
+    width: 70px;
+}
+form div a{
+    color: #000;
+}
+form div a:hover{
+    color: rgb(49, 49, 49);
+}
+form div .btn {
+    color: rgba(20, 20, 20, 0.849);
+    border-radius: 10px;
+    box-shadow: 0px 4px 35px 1px rgb(78, 78, 78);
+    letter-spacing: 3px;
+}
+@media screen and (min-width: 575px) and (max-width: 767px) {
+    header{
+        height: 50vh;
+    }
+    header img{
+      width: 27%;
+      margin: 5px;
+    }
+    main h1{
+        /* font-size: 70px; */
+    }
+    main h2{
+       font-size: 40px;
+    }
+    main h3{
+        font-size: 25px;
+    }
+  }
+  @media screen and (min-width: 0px ) and (max-width: 574px) {
+    header{
+        height: 60%;
+    }
+    header img{
+      width: 150px;
+      margin: 5px;
+    }
+    main{
+        text-align: center;
+    }
+    main h1{
+        font-size: 55px;
+    }
+    main h2{
+       font-size: 40px;
+    }
+    main h3{
+        font-size: 20px;
+    }
+    footer{
+        height: 100px;
+    }
+    footer .enlaces{
+        padding-top: 15px;
+    }
+  }
