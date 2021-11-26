@@ -1,14 +1,14 @@
 const express = require('express')
 const app = express.Router()
 const hash = require('object-hash')
-let {users} = require('../data');
+//let {users} = require('../data');
 const conexion = require('../conexionDB')
 
 app.get('/usuarios', (req, res)=>{
     res.status(200).json({
         msg:'Listado de usuarios',
         //Aqui ira nuestro array de usuarios
-        users
+        //users
     })
 })
 

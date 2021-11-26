@@ -4,7 +4,7 @@ require('dotenv').config()
 app.use(express.json())
 app.use(express.urlencoded()) //hacer parseos del body al json
 const conexion = require('./js/conexionDB') //Aqui va mi conexion con mi base de datos
-app.listen(process.env.PORT, process.env.HOST, ()=>{console.log(`Servidor de Node con Express en puerto ${process.env.HOST}:${process.env.PORT}`)})
+//app.listen(process.env.PORT, process.env.HOST, ()=>{console.log(`Servidor de Node con Express en puerto ${process.env.HOST}:${process.env.PORT}`)})
 
 //Ahora se llaman las routas que utilizaremos para el intercambio de informacion
 const user = require('./js/routes/usuarios.js')
